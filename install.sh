@@ -25,13 +25,13 @@ curl -LO https://github.com/cdk-team/CDK/releases/download/v1.5.5/cdk_linux_amd6
     && rm -rf cdk_linux_amd64;
 
 # Install peirates
-curl -L https://github.com/inguardians/peirates/releases/download/v1.1.25/peirates-linux-amd64.tar.xz \
+curl -L https://github.com/inguardians/peirates/releases/download/v1.1.28/peirates-linux-amd64.tar.xz \
     | tar -xJ peirates-linux-amd64/peirates \
     && install peirates-linux-amd64/peirates /usr/local/bin/ \
     && rm -rf peirates-linux-amd64;
 
 # Install ctrsploit
-curl -LO https://github.com/ctrsploit/ctrsploit/releases/download/v0.5.15/ctrsploit_linux_amd64 \
+curl -LO https://github.com/ctrsploit/ctrsploit/releases/download/v0.11.0/ctrsploit_linux_amd64 \
     && install ctrsploit_linux_amd64 /usr/local/bin/ctrsploit \
     && rm -rf cctrsploit_linux_amd64;
 
@@ -104,8 +104,8 @@ curl -LO https://github.com/nccgroup/kubetcd/releases/download/v1.28/kubetcd_lin
     && rm ./kubetcd_linux_amd64;
 
 # Install k8spider
-curl -LO https://github.com/Esonhugh/k8spider/releases/download/v3.0.1/k8spider_v3.0.1_linux_amd64.tar.gz \
-    && tar -xzvf k8spider_v3.0.1_linux_amd64.tar.gz && install ./k8spider /usr/local/bin  \
+curl -LO https://github.com/Esonhugh/k8spider/releases/download/v3.2.0/k8spider_v3.2.0_linux_amd64.tar.gz \
+    && tar -xzvf k8spider_v3.2.0_linux_amd64.tar.gz && install ./k8spider /usr/local/bin  \
     && rm ./k8spider && rm ./README.md;
 
 #Simple Bypass Falco
