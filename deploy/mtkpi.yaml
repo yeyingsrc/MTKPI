@@ -54,25 +54,9 @@ spec:
         app: mtkpi
     spec:
       serviceAccountName: mtkpi-sa
-      hostNetwork: true
-      hostPID: true
-      hostIPC: true
       containers:
       - name: mtkpi
-        image: r0binak/mtkpi:v1.5
-        securityContext:
-          privileged: true
-        volumeMounts:
-        - mountPath: /host
-          name: noderoot
-      volumes:
-      - name: noderoot
-        hostPath:
-          path: /
-      tolerations:
-        - key: ""
-          operator: "Exists"
-          effect: "NoSchedule"
+        image: r0binak/mtkpi:v1.7
 ---
 apiVersion: v1
 kind: Service
