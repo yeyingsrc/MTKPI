@@ -108,7 +108,7 @@ curl -LO https://github.com/Esonhugh/k8spider/releases/download/v3.2.0/k8spider_
     && tar -xzvf k8spider_v3.2.0_linux_amd64.tar.gz && install ./k8spider /usr/local/bin  \
     && rm ./k8spider && rm ./README.md;
 
-#Simple Bypass Falco
-mv /usr/bin/python3 /usr/bin/pton3 \
-    && mv /usr/bin/curl /usr/bin/kurl \
-    && mv /usr/bin/wget /usr/bin/vget;
+# Install AWS CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
+    && unzip awscliv2.zip \
+    && sudo ./aws/install
